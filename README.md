@@ -69,6 +69,7 @@ Library App is a modular application designed to manage library operations such 
    ```bash
    dotnet test tests/UnitTests/UnitTests.csproj
    ```
+---
 
 ## License
 
