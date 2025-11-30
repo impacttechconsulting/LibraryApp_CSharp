@@ -64,12 +64,7 @@ public class PasswordValidationService : IPasswordValidationService
 
     public PasswordValidationResult ValidatePassword(string password)
     {
-        if (string.IsNullOrEmpty(password))
-        {
-            return PasswordValidationResult.TooShort;
-        }
-
-        if (password.Length < MinPasswordLength)
+        if (string.IsNullOrEmpty(password) || password.Length < MinPasswordLength)
         {
             return PasswordValidationResult.TooShort;
         }
